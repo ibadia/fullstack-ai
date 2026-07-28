@@ -57,27 +57,54 @@ class LoginAPIView(APIView):
         user.save(update_fields=["last_login"])
 
         user_serializer = UserLoginSerializer(user)
+        access_token = login_serializer.validated_data.get("access")
+        refresh_token = login_serializer.validated_data.get("refresh")
+        
         data = {
             "user": user_serializer.data,
-            "token": login_serializer.validated_data,
+            "token": {"access": access_token},
         }
-        return Response(
+        
+        response = Response(
             APIResponse.get_response(
                 data=data,
             )
         )
+        
+        # Set refresh token in HttpOnly cookie
+        if refresh_token:
+            response.set_cookie(
+                "refresh",
+                refresh_token,
+                httponly=True,
+                samesite="Lax",
+                # secure=True  # Ensure HTTPS in production
+            )
+            
+        return response
 
 
 class RefreshTokenAPIView(APIView):
     permission_classes = (AllowAny,)
 
-    @swagger_auto_schema(request_body=TokenRefreshSerializer)
     def post(self, request):
-        req_data = request.data
+        refresh_token = request.COOKIES.get("refresh")
+        if not refresh_token:
+            return Response(
+                APIResponse.get_response(
+                    message="No refresh token provided.",
+                ),
+                status=status.HTTP_401_UNAUTHORIZED,
+            )
+            
+        # Passing it to serializer as 'refresh'
+        req_data = request.data.copy()
+        req_data["refresh"] = refresh_token
+        
         serializer = TokenRefreshSerializer(data=req_data)
         serializer.is_valid(raise_exception=True)
         data = {
-            "token": serializer.validated_data,
+            "token": {"access": serializer.validated_data.get("access")},
         }
         return Response(
             APIResponse.get_response(
@@ -155,9 +182,11 @@ class SignUpAPIView(APIView):
         user = serializer.save()
 
         refresh = RefreshToken.for_user(user)
+        access_token = str(refresh.access_token)
+        refresh_token = str(refresh)
+        
         tokens = {
-            "refresh": str(refresh),
-            "access": str(refresh.access_token),
+            "access": access_token,
         }
 
         user_serializer = UserLoginSerializer(user)
@@ -165,7 +194,16 @@ class SignUpAPIView(APIView):
             "user": user_serializer.data,
             "token": tokens,
         }
-        return Response(
+        
+        response = Response(
             APIResponse.get_response(message="User created successfully.", data=data),
             status=status.HTTP_201_CREATED,
         )
+        
+        response.set_cookie(
+            "refresh",
+            refresh_token,
+            httponly=True,
+            samesite="Lax",
+        )
+        return response

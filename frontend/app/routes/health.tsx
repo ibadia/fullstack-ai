@@ -1,48 +1,31 @@
-import { useEffect, useState } from "react";
+/**
+ * /health route module
+ *
+ * - clientLoader: fetches health status before render (no loading flash)
+ * - meta: sets browser tab title
+ * - default export: renders HealthCheck with loader data
+ *
+ * Uses clientLoader because the health check runs from the user's browser.
+ */
 
-export default function Health() {
-  const [status, setStatus] = useState<"loading" | "ok" | "error">("loading");
-  const [detail, setDetail] = useState<string>("");
+import { useLoaderData } from "react-router";
+import { checkBackendHealth } from "~/lib/health";
+import { HealthCheck } from "~/components/HealthCheck";
+import type { Route } from "./+types/health";
 
-  useEffect(() => {
-    fetch("http://localhost:8000/healthcheck/")
-      .then(async (res) => {
-        const text = await res.text();
-        setDetail(text);
-        setStatus(res.ok ? "ok" : "error");
-      })
-      .catch((err) => {
-        setDetail(err.message);
-        setStatus("error");
-      });
-  }, []);
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Health Check" },
+    { name: "description", content: "Backend health status" },
+  ];
+}
 
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-white px-4 dark:bg-gray-950">
-      <div className="w-full max-w-md rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900">
-        <h1 className="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">
-          Backend health check
-        </h1>
-        <p
-          className={
-            "mb-4 text-sm font-medium " +
-            (status === "ok"
-              ? "text-green-600 dark:text-green-400"
-              : status === "error"
-              ? "text-red-600 dark:text-red-400"
-              : "text-gray-500 dark:text-gray-400")
-          }
-        >
-          {status === "loading" && "Checking..."}
-          {status === "ok" && "✅ Backend is healthy"}
-          {status === "error" && "❌ Backend unreachable"}
-        </p>
-        {detail && (
-          <pre className="overflow-x-auto rounded-lg border border-gray-200 bg-gray-50 p-3 text-left text-xs text-gray-600 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-400">
-            {detail}
-          </pre>
-        )}
-      </div>
-    </div>
-  );
+export async function clientLoader({}: Route.ClientLoaderArgs) {
+  return await checkBackendHealth();
+}
+
+export default function HealthRoute() {
+  const data = useLoaderData<typeof clientLoader>();
+
+  return <HealthCheck ok={data.ok} detail={data.detail} />;
 }

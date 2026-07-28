@@ -1,85 +1,50 @@
-import { useState } from "react";
-import { useNavigate } from "react-router";
+/**
+ * /login route module
+ *
+ * - clientAction: handles form submission (email + password → auth service → redirect)
+ * - meta: sets browser tab title
+ * - default export: renders LoginForm with any action errors
+ *
+ * Uses clientAction (not server action) because storeTokens uses sessionStorage (browser-only).
+ */
 
-export default function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+import { redirect, useActionData, useNavigation } from "react-router";
+import { login, storeTokens } from "~/lib/auth";
+import { LoginForm } from "~/components/LoginForm";
+import type { Route } from "./+types/login";
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-    try {
-      const res = await fetch("http://localhost:8000/auth/token/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
-      });
-      if (!res.ok) {
-        const data = await res.json().catch(() => null);
-        throw new Error(data?.detail || `Login failed (${res.status})`);
-      }
-      const data = await res.json();
-      sessionStorage.setItem("access", data.access);
-      sessionStorage.setItem("refresh", data.refresh);
-      navigate("/");
-    } catch (err: any) {
-      setError(err.message || "Something went wrong");
-    } finally {
-      setLoading(false);
-    }
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Log in" },
+    { name: "description", content: "Log in to your account" },
+  ];
+}
+
+export async function clientAction({ request }: Route.ClientActionArgs) {
+  const formData = await request.formData();
+  const email = formData.get("email") as string;
+  const password = formData.get("password") as string;
+
+  try {
+    const tokens = await login(email, password);
+    storeTokens(tokens);
+    return redirect("/");
+  } catch (err) {
+    return {
+      error: err instanceof Error ? err.message : "Something went wrong",
+    };
   }
+}
+
+export default function LoginRoute() {
+  const actionData = useActionData<typeof clientAction>();
+  const navigation = useNavigation();
+  const isSubmitting = navigation.state === "submitting";
 
   return (
-    <div className="flex min-h-screen w-full items-center justify-center bg-white px-4 dark:bg-gray-950">
-      <div className="w-full max-w-sm rounded-xl border border-gray-200 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-gray-900">
-        <h1 className="mb-6 text-xl font-semibold text-gray-900 dark:text-gray-100">
-          Log in
-        </h1>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Username
-            </label>
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-              className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 outline-none transition focus:border-gray-900 focus:ring-1 focus:ring-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100 dark:focus:border-gray-100 dark:focus:ring-gray-100"
-            />
-          </div>
-          <div>
-            <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">
-              Password
-            </label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 outline-none transition focus:border-gray-900 focus:ring-1 focus:ring-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100 dark:focus:border-gray-100 dark:focus:ring-gray-100"
-            />
-          </div>
-          {error && <p className="text-sm text-red-600 dark:text-red-400">{error}</p>}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full rounded-lg bg-gray-900 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
-          >
-            {loading ? "Logging in..." : "Log in"}
-          </button>
-        </form>
-        <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-          Don't have an account?{" "}
-          <a href="/signup" className="font-semibold text-gray-900 hover:underline dark:text-gray-100">
-            Sign up
-          </a>
-        </p>
-      </div>
-    </div>
+    <LoginForm
+      error={actionData && "error" in actionData ? actionData.error : undefined}
+      isSubmitting={isSubmitting}
+    />
   );
 }
