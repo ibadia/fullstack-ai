@@ -58,6 +58,66 @@ python manage.py shell -c "from apps.users.models import User; u=User.objects.cr
 python manage.py runserver
 ```
 
+## Running Celery (background jobs)
+
+This project uses Celery for background tasks like receipt processing.
+
+### 1. Make sure Redis is running
+
+```bash
+redis-server
+```
+
+If you dont have redis installed:
+```bash
+# mac
+brew install redis
+
+# ubuntu/debian
+sudo apt install redis-server
+```
+
+### 2. Set Celery env vars in `.env`
+
+```env
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+```
+
+### 3. Start the celery worker
+
+Open a new terminal, activate your venv, then run:
+
+```bash
+cd backend
+source /venv/bin/activate.ps1
+celery -A core worker -l info
+```
+
+This picks up and runs background tasks like receipt analysis jobs.
+
+### 4. (Optional) Start celery beat
+
+Only needed if you have scheduled/periodic tasks:
+
+```bash
+celery -A core beat -l info
+```
+
+Keep this running alongside your django server and worker while developing features that use background jobs.
+
+### Gemini API Key
+
+This project uses Google Gemini API for receipt analysis.
+
+1. Get an API key from https://aistudio.google.com/apikey
+2. Add it to your `.env` file:
+
+```env
+GEMINI_API_KEY=your-gemini-api-key-here
+```
+
+
 The API is available at http://127.0.0.1:8000/.
 
 ## Key endpoints

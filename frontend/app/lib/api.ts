@@ -47,7 +47,7 @@ export async function apiFetch<T = Record<string, unknown>>(
     if (!token){
       token = await refreshAccessToken();
     }
-    if (token) headers["Authorization"] = `Bearer ${token}`;
+    headers.Authorization = `Bearer ${token}`;
   }
 
   const res = await fetch(`${API_URL}${path}`, {
