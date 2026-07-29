@@ -10,7 +10,7 @@
  */
 
 import { API_URL } from "./config";
-import { getAccessToken } from "./auth";
+import { getAccessToken, refreshAccessToken} from "./auth";
 import type { ApiEnvelope } from "./types";
 
 export interface ApiFetchOptions {
@@ -43,7 +43,10 @@ export async function apiFetch<T = Record<string, unknown>>(
   }
 
   if (options.auth) {
-    const token = getAccessToken();
+    let token = getAccessToken();
+    if (!token){
+      token = await refreshAccessToken();
+    }
     if (token) headers["Authorization"] = `Bearer ${token}`;
   }
 
