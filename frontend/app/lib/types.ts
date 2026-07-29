@@ -18,6 +18,7 @@ export interface ApiEnvelope<T = Record<string, unknown>> {
 
 export interface AuthTokens {
   access: string;
+  refresh: string
 }
 
 export interface UserInfo {
