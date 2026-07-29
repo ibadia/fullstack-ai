@@ -18,6 +18,3 @@ CELERY_RESULT_BACKEND=redis://localhost:6379/1
 # Optional OnLogs service credentials (required only for `docker compose up -d onlogs`)
 ONLOGS_ADMIN_USERNAME=admin
 ONLOGS_ADMIN_PASSWORD=change-me
-
-# API
-GEMINI_API_KEY=

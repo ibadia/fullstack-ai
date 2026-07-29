@@ -45,7 +45,7 @@ class LoginAPIView(APIView):
         email = login_serializer.validated_data["email"]
 
         try:
-            user = AuthenticationService.authenticate_user(email)
+            user = AuthenticationService.process_login(email)
         except ValueError as e:
             return Response(
                 APIResponse.get_response(message=str(e)),
@@ -180,7 +180,7 @@ class SignUpAPIView(APIView):
         serializer = SignUpSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
-        user, access_token, refresh_token = AuthenticationService.register_user(
+        user, access_token, refresh_token = AuthenticationService.process_signup(
             serializer
         )
 

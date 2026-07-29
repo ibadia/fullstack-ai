@@ -36,9 +36,11 @@ export async function apiFetch<T = Record<string, unknown>>(
   path: string,
   options: ApiFetchOptions = {}
 ): Promise<T> {
-  const headers: Record<string, string> = {
-    "Content-Type": "application/json",
-  };
+  const headers: Record<string, string> = {}
+  const isFormData = options.body instanceof FormData;
+  if (!isFormData) {  
+    headers["Content-Type"] = "application/json";
+  }
 
   if (options.auth) {
     const token = getAccessToken();
@@ -49,7 +51,7 @@ export async function apiFetch<T = Record<string, unknown>>(
     method: options.method ?? "GET",
     headers,
     credentials: "include",
-    body: options.body ? JSON.stringify(options.body) : undefined,
+    body: isFormData ? (options.body as FormData) : options.body ? JSON.stringify(options.body) : undefined,
   });
 
   const json: ApiEnvelope<T> | null = await res.json().catch(() => null);

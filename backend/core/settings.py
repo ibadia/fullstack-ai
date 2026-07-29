@@ -35,6 +35,8 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 # SECRET_KEY = env("SECRET_KEY")
 SECRET_KEY = env("SECRET_KEY")
 
+# Adding API KEY for OCR
+GEMINI_API_KEY = env("GEMINI_API_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
@@ -57,6 +59,7 @@ DJANGO_APPS = [
 LOCAL_APPS = [
     "apps.users",
     "apps.jobs",
+    "apps.receipts"
 ]
 THIRD_PARTY_APPS = [
     "rest_framework",

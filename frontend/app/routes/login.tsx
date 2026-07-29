@@ -5,7 +5,7 @@
  * - meta: sets browser tab title
  * - default export: renders LoginForm with any action errors
  *
- * Uses clientAction (not server action) because storeTokens uses sessionStorage (browser-only).
+ * Uses clientAction (not server action) because storeTokens uses in-memory (browser-only).
  */
 
 import { redirect, useActionData, useNavigation } from "react-router";
@@ -28,7 +28,7 @@ export async function clientAction({ request }: Route.ClientActionArgs) {
   try {
     const tokens = await login(email, password);
     storeTokens(tokens);
-    return redirect("/");
+    return redirect("/receipts");
   } catch (err) {
     return {
       error: err instanceof Error ? err.message : "Something went wrong",
