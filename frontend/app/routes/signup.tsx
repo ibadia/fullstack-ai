@@ -32,7 +32,7 @@ export async function clientAction({ request }: Route.ClientActionArgs) {
   try {
     const tokens = await signup(email, password, confirmPassword);
     storeTokens(tokens);
-    return redirect("/");
+    return redirect("/login");
   } catch (err) {
     return {
       error: err instanceof Error ? err.message : "Something went wrong",
