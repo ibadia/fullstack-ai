@@ -8,6 +8,7 @@
 
 import { redirect, useActionData, useNavigation } from "react-router";
 import { signup, storeTokens } from "~/lib/auth";
+import { signupSchema } from "~/lib/validation";
 import { SignupForm } from "~/components/SignupForm";
 import type { Route } from "./+types/signup";
 
@@ -20,17 +21,18 @@ export function meta({}: Route.MetaArgs) {
 
 export async function clientAction({ request }: Route.ClientActionArgs) {
   const formData = await request.formData();
-  const email = formData.get("email") as string;
-  const password = formData.get("password") as string;
-  const confirmPassword = formData.get("confirm_password") as string;
+  const result = signupSchema.safeParse(Object.fromEntries(formData));
 
-  // Client-side validation: passwords must match
-  if (password !== confirmPassword) {
-    return { error: "Passwords do not match." };
+  if (!result.success) {
+    return { error: result.error.issues[0]?.message ?? "Invalid form data." };
   }
 
   try {
-    const tokens = await signup(email, password, confirmPassword);
+    const tokens = await signup(
+      result.data.email,
+      result.data.password,
+      result.data.confirm_password
+    );
     storeTokens(tokens);
     return redirect("/login");
   } catch (err) {
