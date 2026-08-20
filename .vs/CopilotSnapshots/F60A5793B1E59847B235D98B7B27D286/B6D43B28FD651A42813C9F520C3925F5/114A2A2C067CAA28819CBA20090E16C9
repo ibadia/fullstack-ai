@@ -1,4 +1,4 @@
-# Contributing
+﻿# Contributing
 
 Thank you for contributing to this project. The usual workflow is to choose or
 create a GitHub issue, make a focused change, and open a pull request that links
@@ -43,22 +43,6 @@ frontend, or both, depending on your change.
 - Do not commit secrets, local environment files, generated files, or unrelated
   formatting changes.
 
-### Architectural Decisions
-
-#### Receipt Processing (MVP)
-For MVP reliability, receipt analysis uses **synchronous processing by default**. This means:
-- Analysis happens immediately during the request/response cycle
-- Simple, reliable, no queue infrastructure required
-- Better suited for reviewers testing without Celery setup
-- Supports file uploads up to 10MB per request timeout
-
-**Optional Async Mode**: When Celery is properly configured (with Redis/RabbitMQ and worker processes), you can enable background processing by setting `RECEIPT_PROCESSING_MODE=async` in `.env`. This trades immediate response for:
-- Scalability to thousands of concurrent receipts
-- Better resource utilization
-- Non-blocking file uploads
-
-See `backend/RECEIPT_ANALYSIS.md` for detailed configuration.
-
 Run the relevant checks before opening a pull request.
 
 Backend:
@@ -94,4 +78,12 @@ Open a pull request from your branch to the repository's default branch. In the
 pull request:
 
 - Explain what changed and why.
-- Link the issue with a closing keyword, such as "Closes #123".
+- Link the issue with a closing keyword, such as `Fixes #123`, `Closes #123`,
+  or `Resolves #123`. GitHub will close the linked issue when the pull request
+  is merged.
+- Describe how you tested the change.
+- Include screenshots or recordings for visible user-interface changes.
+- Keep the pull request limited to one issue whenever practical.
+
+Respond to review feedback with additional commits. Avoid rewriting published
+history unless a maintainer asks you to do so.

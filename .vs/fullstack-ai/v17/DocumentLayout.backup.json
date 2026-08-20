@@ -1,0 +1,364 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\TESTING_SECURITY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\TESTING_SECURITY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY_IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\SECURITY_IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\utils\\middleware\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\SECURITY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\api\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\services\\processor.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\services\\processor.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\utils\\file_security.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\utils\\file_security.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\utils\\middleware\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\filters.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\utils\\logging\\filters.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\utils\\logging\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\core\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\core\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\RECEIPT_ANALYSIS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\RECEIPT_ANALYSIS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\api\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\api\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\apps\\receipts\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\CONTRIBUTING.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CONTRIBUTING.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TESTING_SECURITY.md",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\TESTING_SECURITY.md",
+              "RelativeDocumentMoniker": "backend\\TESTING_SECURITY.md",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\TESTING_SECURITY.md",
+              "RelativeToolTip": "backend\\TESTING_SECURITY.md",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-31T07:02:39.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SECURITY_IMPLEMENTATION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY_IMPLEMENTATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "backend\\SECURITY_IMPLEMENTATION_SUMMARY.md",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY_IMPLEMENTATION_SUMMARY.md",
+              "RelativeToolTip": "backend\\SECURITY_IMPLEMENTATION_SUMMARY.md",
+              "ViewState": "AgIAAJkAAAAAAAAAAAASwOwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-31T06:58:36.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "__init__.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\__init__.py",
+              "RelativeDocumentMoniker": "backend\\utils\\middleware\\__init__.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\__init__.py",
+              "RelativeToolTip": "backend\\utils\\middleware\\__init__.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:58:28.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SECURITY.md",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY.md",
+              "RelativeDocumentMoniker": "backend\\SECURITY.md",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\SECURITY.md",
+              "RelativeToolTip": "backend\\SECURITY.md",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAnwNoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-31T06:54:24.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.gitignore",
+              "RelativeDocumentMoniker": "backend\\.gitignore",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.gitignore",
+              "RelativeToolTip": "backend\\.gitignore",
+              "ViewState": "AgIAAAwAAAAAAAAAAADgvwAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-07-31T06:54:03.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "processor.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\services\\processor.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\services\\processor.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\services\\processor.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\services\\processor.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABABAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:32:03.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\views.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\api\\views.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\views.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\api\\views.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxABAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:32:31.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env.example",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.env.example",
+              "RelativeDocumentMoniker": "backend\\.env.example",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\.env.example",
+              "RelativeToolTip": "backend\\.env.example",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-31T06:33:37.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "file_security.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\utils\\file_security.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\utils\\file_security.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\utils\\file_security.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\utils\\file_security.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:52:37.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "security.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\security.py",
+              "RelativeDocumentMoniker": "backend\\utils\\middleware\\security.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\middleware\\security.py",
+              "RelativeToolTip": "backend\\utils\\middleware\\security.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:52:24.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "filters.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\filters.py",
+              "RelativeDocumentMoniker": "backend\\utils\\logging\\filters.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\filters.py",
+              "RelativeToolTip": "backend\\utils\\logging\\filters.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:52:11.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "__init__.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\__init__.py",
+              "RelativeDocumentMoniker": "backend\\utils\\logging\\__init__.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\utils\\logging\\__init__.py",
+              "RelativeToolTip": "backend\\utils\\logging\\__init__.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:52:08.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "settings.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\core\\settings.py",
+              "RelativeDocumentMoniker": "backend\\core\\settings.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\core\\settings.py",
+              "RelativeToolTip": "backend\\core\\settings.py",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:33:57.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\requirements.txt",
+              "RelativeDocumentMoniker": "backend\\requirements.txt",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\requirements.txt",
+              "RelativeToolTip": "backend\\requirements.txt",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-07-31T06:29:56.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RECEIPT_ANALYSIS.md",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\RECEIPT_ANALYSIS.md",
+              "RelativeDocumentMoniker": "backend\\RECEIPT_ANALYSIS.md",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\RECEIPT_ANALYSIS.md",
+              "RelativeToolTip": "backend\\RECEIPT_ANALYSIS.md",
+              "ViewState": "AgIAANEAAAAAAAAAAAAnwOMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-31T06:34:14.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\urls.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\api\\urls.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\urls.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\api\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:33:20.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "serializers.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\serializers.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\api\\serializers.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\api\\serializers.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\api\\serializers.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:33:05.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "tasks.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\tasks.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\tasks.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\tasks.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\tasks.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:32:19.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\models.py",
+              "RelativeDocumentMoniker": "backend\\apps\\receipts\\models.py",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\backend\\apps\\receipts\\models.py",
+              "RelativeToolTip": "backend\\apps\\receipts\\models.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-07-31T06:31:48.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CONTRIBUTING.md",
+              "DocumentMoniker": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\CONTRIBUTING.md",
+              "RelativeDocumentMoniker": "CONTRIBUTING.md",
+              "ToolTip": "C:\\Users\\ALI\\source\\repos\\asadriz\\fullstack-ai\\CONTRIBUTING.md",
+              "RelativeToolTip": "CONTRIBUTING.md",
+              "ViewState": "AgIAAF8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-31T06:28:54.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
