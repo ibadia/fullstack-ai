@@ -1,7 +1,7 @@
 /**
  * HealthCheck — presentational component that displays backend health status.
  *
- * Receives data as props from the route's clientLoader.
+ * Receives data as props from the route's React Query result.
  * No useEffect, no useState, no fetch — just renders what it's given.
  */
 
@@ -10,15 +10,17 @@ import { CenteredPageLayout } from "~/components/layout/CenteredPageLayout";
 const statusStyles: Record<string, string> = {
   ok: "text-green-600 dark:text-green-400",
   error: "text-red-600 dark:text-red-400",
+  loading: "text-gray-600 dark:text-gray-400",
 };
 
 interface HealthCheckProps {
   ok: boolean;
   detail: string;
+  isLoading?: boolean;
 }
 
-export function HealthCheck({ ok, detail }: HealthCheckProps) {
-  const status = ok ? "ok" : "error";
+export function HealthCheck({ ok, detail, isLoading = false }: HealthCheckProps) {
+  const status = isLoading ? "loading" : ok ? "ok" : "error";
 
   return (
     <CenteredPageLayout maxWidth="max-w-md">
@@ -27,7 +29,11 @@ export function HealthCheck({ ok, detail }: HealthCheckProps) {
       </h1>
 
       <p className={`mb-4 text-center text-sm font-medium ${statusStyles[status]}`}>
-        {ok ? "✅ Backend is healthy" : "❌ Backend unreachable"}
+        {isLoading
+          ? "Checking backend..."
+          : ok
+            ? "✅ Backend is healthy"
+            : "❌ Backend unreachable"}
       </p>
 
       {detail && (
